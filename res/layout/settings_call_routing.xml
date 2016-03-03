@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    > 
+    
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/settings_title"
+    android:text="Settings"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="20dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="-10dip"
+    android:gravity="center">
+  </TextView>
+  
+     <LinearLayout
+        android:id="@+id/settingss_top_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/settings_title"
+        >
+ 
+    <include layout="@layout/settings_top_tabs"/>
+     </LinearLayout>
+     
+   <!--  <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="410dip"
+        android:layout_marginTop="-20dip"
+        android:id="@+id/scrollView"
+        android:layout_below="@id/settingss_top_tabs">  --> 
+     
+    
+   <RelativeLayout
+        android:id="@+id/nested_relative_layout"
+        android:layout_width="fill_parent"
+       android:layout_height="410dip"
+        android:layout_marginTop="-20dip"
+        android:layout_below="@id/settingss_top_tabs"
+        android:orientation="vertical" 
+        >
+     
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:text="When my extension is busy"
+        android:textStyle="bold"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:id="@+id/busy_extension_call_routing_settings"
+        android:layout_below="@id/settings_top_tabs"
+        > 
+     </Button>
+     
+    <RadioGroup
+        android:id="@+id/radio_busy_extension"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/busy_extension_call_routing_settings"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radio_move_call_to_extension_busy_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:text="Move Call to Extension" 
+            android:checked="false" />
+ 
+        <RadioButton
+            android:id="@+id/radio_take_caller_to_voice_mail_busy_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:checked="false" 
+            android:text="Take Caller to Voice Mail" />
+        
+        <RadioButton
+            android:id="@+id/radio_park_call_in_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:checked="false" 
+            android:text="Park Call in Queue" />
+ 
+    </RadioGroup>
+     
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:text="When Call is not answered"
+        android:textStyle="bold"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:id="@+id/call_not_answered_routing_settings"
+        android:layout_below="@id/radio_busy_extension"
+        > 
+     </Button>
+     
+      <RadioGroup
+        android:id="@+id/radio_call_not_answered"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/call_not_answered_routing_settings"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radio_move_call_to_extension_call_not_answered"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:text="Move Call to Extension" 
+            android:checked="false" />
+ 
+        <RadioButton
+            android:id="@+id/radio_take_caller_to_voice_mail_call_not_answered"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:checked="false" 
+            android:text="Take Caller to Voice Mail" />
+ 
+    </RadioGroup>
+     
+    
+     
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:text="When I am not available"
+        android:textStyle="bold"
+        android:layout_marginTop="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:id="@+id/not_available_routing_settings"
+        android:layout_below="@id/radio_call_not_answered"
+        > 
+     </Button>
+     
+     <Button
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="240dip"
+        android:layout_marginRight="0dip"
+        android:id="@+id/submit_call_routing"
+        android:layout_below="@id/not_available_routing_settings"
+        > 
+     </Button>
+     
+      <RadioGroup
+        android:id="@+id/radio_not_available"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/not_available_routing_settings"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radio_move_call_to_extension_not_available"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:text="Move Call to Extension" 
+            android:checked="false" />
+ 
+        <RadioButton
+            android:id="@+id/radio_take_caller_to_voice_mail_not_available"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:checked="false" 
+            android:text="Take Caller to Voice Mail" />
+ 
+    </RadioGroup>
+    
+   </RelativeLayout>
+   
+  <!--   </ScrollView>  -->
+   
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="00dip"
+        android:layout_below="@id/nested_relative_layout"
+        >
+        
+    <include layout="@layout/dialer_bottom_tabs"/>
+ </LinearLayout>
+		
+   
+	
+	
+ </RelativeLayout>

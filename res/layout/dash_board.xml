@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_screen_background"
+    android:orientation="vertical"
+   >
+    
+    <ImageView
+    		android:id="@+id/home_ccreen_logo"
+    		android:layout_width="200dip"
+    		android:layout_height="160dip"
+    		android:src="@drawable/home_ccreen_logo_"
+    		android:contentDescription="Home Screen Logo"
+    		android:layout_marginLeft="60dip"
+    		android:layout_marginTop="10dip"
+    	/>
+    
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:background="@drawable/dashboard_screen_button_1"
+        android:drawableTop="@drawable/icon_dialer"
+        android:id="@+id/Dialer"
+        android:textColor="@drawable/gray"
+        android:paddingTop="12sp"
+        android:textStyle="bold"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="60dip"
+        android:layout_marginLeft="14dip"
+        android:layout_below="@id/home_ccreen_logo"
+        android:text="Dialer"> 
+    </Button>
+    
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:background="@drawable/dashboard_screen_button_1"
+        android:drawableTop="@drawable/icon_ext_board"
+        android:id="@+id/EXT_Board"
+        android:paddingTop="12sp"
+        android:textColor="@drawable/gray"
+        android:textStyle="bold"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="60dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/home_ccreen_logo"
+        android:layout_toRightOf="@id/Dialer"
+        android:text="EXT Board"> 
+    </Button>
+    
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:background="@drawable/dashboard_screen_button_1"
+        android:drawableTop="@drawable/icon_settings"
+        android:id="@+id/settings"
+        android:paddingTop="12sp"
+        android:textColor="@drawable/gray"
+        android:textStyle="bold"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="60dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/home_ccreen_logo"
+        android:layout_toRightOf="@id/EXT_Board"
+        android:text="Settings"> 
+    </Button>
+    
+    
+    <!-- 	<ImageButton
+            android:id="@+id/dialer"
+            android:layout_width="70dp"
+            android:layout_height="70dip"
+            android:background="@drawable/dashboard_screen_button_1"
+            android:src="@drawable/icon_dialer"
+            android:layout_below="@id/home_ccreen_logo"
+            android:layout_marginTop="90dip"
+            android:layout_marginLeft="30dip"
+            android:contentDescription="Dialer"
+            android:text="Dialer" />  -->
+    	
+    	
+
+</RelativeLayout>

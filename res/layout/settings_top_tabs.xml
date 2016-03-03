@@ -1,0 +1,54 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/bottom_tab_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="67dip"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    
+    >
+ <Button
+    android:layout_height="47dip"
+    android:id="@+id/Availability_settings_top_tabs"
+    android:text="Availability"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:background="@drawable/orange_button"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:gravity="center"
+    android:layout_marginRight="0dp"
+   >
+  </Button>
+ 
+   <Button
+    android:layout_height="47dip"
+    android:id="@+id/Call_routing_settings_top_tabs"
+    android:text="Call Routing"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:background="@drawable/orange_button"
+    android:layout_marginRight="0dp"
+     android:gravity="center">
+  </Button>
+ 
+   <Button
+    android:layout_height="47dip"
+    android:id="@+id/password_settings_top_tabs"
+    android:text="Password"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:background="@drawable/orange_button"
+    android:layout_marginRight="0dp"
+    android:gravity="center">
+  </Button>
+ 
+</LinearLayout>
+</merge>

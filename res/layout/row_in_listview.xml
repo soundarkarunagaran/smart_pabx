@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"  
+ android:id="@+id/row_in_listview"   
+ android:layout_width="fill_parent"   
+ android:layout_height="wrap_content"
+ android:textColor="@drawable/black"
+ android:background="@drawable/grid_background" 
+ android:padding="10dp"  
+ android:textSize="13dip" >  
+</TextView> 

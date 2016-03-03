@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_screen_background">
+    
+     <ImageView
+    		android:id="@+id/home_ccreen_logo"
+    		android:layout_width="200dip"
+    		android:layout_height="160dip"
+    		android:src="@drawable/home_ccreen_logo_"
+    		android:contentDescription="Home Screen Logo"
+    		android:layout_marginLeft="60dip"
+    		android:layout_marginTop="10dip"
+    	/>  
+    
+   <!--  <EditText 
+        android:id="@+id/home_screen_icon_company_number"  
+        android:layout_width="200dip" 
+        android:layout_height="40dip"
+        android:layout_marginLeft="60dip"
+        android:background="@drawable/home_screen_textfield"
+        android:layout_below="@id/home_ccreen_logo"
+        android:layout_marginTop="30dip" 
+        android:paddingLeft="33dip"  
+        />
+    
+    <ImageView
+    		android:id="@+id/yellow_part_edittext"
+    		android:layout_width="42dip"
+    		android:layout_height="37dip"
+    		android:src="@drawable/yellow_part_edittext"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="60dip"
+    		android:layout_marginTop="30dip"
+    		android:layout_below="@id/home_ccreen_logo"
+    	/>  
+    
+     <ImageView
+    		android:id="@+id/home_screen_icon_company_number_i"
+    		android:layout_width="23dip"
+    		android:layout_height="21dip"
+    		android:src="@drawable/home_screen_icon_company_number"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="62dip"
+    		android:layout_below="@id/home_ccreen_logo"
+    		android:layout_marginTop="39dip"
+    		
+    	/> -->
+    
+    <EditText 
+        android:id="@+id/home_screen_icon_my_number_e"  
+        android:layout_width="200dip" 
+        android:layout_height="40dip"
+        android:layout_marginLeft="60dip"
+        android:layout_below="@id/home_ccreen_logo"
+        android:layout_marginTop="32dip" 
+        android:paddingLeft="33dip"     
+        android:background="@drawable/home_screen_textfield"    
+        />
+    
+    <ImageView
+    		android:id="@+id/home_screen_icon_my_number_i"
+    		android:layout_width="23dip"
+    		android:layout_height="21dip"
+    		android:src="@drawable/home_screen_icon_my_number"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="62dip"
+    		android:layout_below="@id/home_ccreen_logo"
+    		android:layout_marginTop="41dip"
+    		
+    	/>
+    
+   <!--  <ImageView
+    		android:id="@+id/yellow_part_edittext"
+    		android:layout_width="42dip"
+    		android:layout_height="37dip"
+    		android:src="@drawable/yellow_part_edittext"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="60dip"
+    		android:layout_marginTop="10dip"
+    		android:layout_below="@id/home_screen_icon_company_number"
+    	/>  -->
+    
+    <EditText 
+        android:id="@+id/home_screen_icon_password"  
+        android:layout_width="200dip" 
+        android:layout_height="40dip"
+        android:layout_marginLeft="60dip"
+        android:layout_below="@id/home_screen_icon_my_number_e"
+        android:layout_marginTop="10dip" 
+        android:paddingLeft="33dip"
+        android:inputType="textPassword"
+        android:background="@drawable/home_screen_textfield"     
+        />
+    
+    <ImageView
+    		android:id="@+id/home_screen_icon_password_i"
+    		android:layout_width="23dip"
+    		android:layout_height="21dip"
+    		android:src="@drawable/home_screen_icon_password"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="64dip"
+    		android:layout_below="@id/home_screen_icon_my_number_e"
+    		android:layout_marginTop="20dip"
+    		
+    	/>
+    
+  <!--   <ImageView
+    		android:id="@+id/yellow_part_edittext"
+    		android:layout_width="42dip"
+    		android:layout_height="37dip"
+    		android:src="@drawable/yellow_part_edittext"
+    		android:contentDescription="yellow_part_edittext"
+    		android:layout_marginLeft="60dip"
+    		android:layout_marginTop="10dip"
+    		android:layout_below="@id/home_screen_icon_my_number"
+    	/>   -->
+    	
+    	<Button
+            android:id="@+id/Login_button"
+            android:layout_width="200dp"
+            android:layout_height="40dip"
+            android:background="@drawable/home_login_button"
+            android:layout_below="@id/home_screen_icon_password"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="60dip"
+            android:text="Login" />
+    	
+    	<CheckBox 
+    	    android:id="@+id/remember_me"
+     		android:layout_width="163dp"
+     		android:layout_height="23dip"
+    		android:text="Remember me"
+    		android:textSize="10dip"
+     		android:layout_below="@id/Login_button"
+     		android:layout_marginLeft="60dp"
+     		android:layout_marginTop="5dp">
+     
+ 		</CheckBox> 
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    > 
+    
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/Dialer_title_dialer_main_layout"
+    android:text="Dialer"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="20dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="3dip"
+    android:gravity="center">
+  </TextView>
+  
+	<EditText 
+    android:id="@+id/number_field_dialer_manin_layout"  
+    android:layout_width="fill_parent" 
+    android:layout_height="50dip"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:layout_below="@id/Dialer_title_dialer_main_layout"
+    android:layout_marginTop="15dip" 
+    android:paddingRight="33dip"   
+    />
+
+    <Button
+        android:layout_width="90dip"
+        android:layout_height="50dip"
+        android:text="Call"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="190dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/call"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   
+		
+   
+	
+	
+ </RelativeLayout>

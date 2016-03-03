@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/home_screen_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    > 
+    
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/ext_board_title"
+    android:text="EXT Board"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="20dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="3dip"
+    android:gravity="center">
+  </TextView>
+  
+  <ImageView
+    android:id="@+id/home_icon_ext_board"
+    android:layout_width="20dip"
+    android:layout_height="46dip"
+    android:src="@drawable/icon_home"
+    android:contentDescription="Home logo on dialer main layout"
+    android:layout_marginLeft="20dip"
+    android:layout_marginTop="-3dip"
+    />
+    <!-- code starts for status bar -->
+    <TextView
+    android:layout_height="26dip"
+    android:id="@+id/status_ext_board"
+    android:background="@drawable/status"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_below="@id/ext_board_title" > 
+    </TextView>
+    
+	<TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_name_status_ext_board"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Name"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_below="@id/ext_board_title"  
+    />
+    
+    <TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_extension_status_ext_board"  
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Extension"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_marginLeft="217dip"
+    android:layout_below="@id/ext_board_title"  
+    />
+    <!-- code ends for status bar -->
+    
+    <TextView
+    android:id="@+id/background_search_bar_ext_board"  
+    android:layout_width="fill_parent"
+    android:layout_height="55dip"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:background="@drawable/orange_bar"
+    android:layout_below="@id/status_ext_board"
+    android:layout_marginTop="0dip"
+    android:layout_marginLeft="0dip"
+
+    />
+    
+	<EditText 
+    android:id="@+id/search_bar_ext_board"  
+    android:layout_width="230dip" 
+    android:layout_height="50dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="15dip"
+    android:hint="Search"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:layout_below="@id/status_ext_board"
+    android:layout_marginTop="5dip" 
+    android:paddingRight="33dip"   
+    />
+
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="55dip"
+        android:background="@drawable/orange_button"
+        android:drawableTop="@drawable/search"
+        android:paddingTop="12dip"
+        android:layout_marginLeft="240dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/search_ext_board"
+       	android:layout_below="@id/status_ext_board"
+     	android:layout_marginTop="0dip" 
+        > 
+     </Button>
+     
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="55dip"
+        android:background="@drawable/orange_button"
+        android:drawableTop="@drawable/refresh"
+        android:paddingTop="12dip"
+        android:layout_marginLeft="280dip"
+        android:layout_marginRight="0dip"
+        android:id="@+id/refresh_ext_board"
+     	 android:layout_below="@id/status_ext_board"
+    	android:layout_marginTop="0dip" 
+        > 
+     </Button>
+     
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/title_list_view_ext_board"
+    android:text="Name             Designation                Ext"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="15dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginLeft="5dip"
+    android:layout_marginTop="3dip"
+    android:layout_below="@id/refresh_ext_board"
+>
+  </TextView>
+     
+    <ListView android:layout_width="fill_parent"   
+      android:layout_height="280dip"
+      android:scrollbars="vertical"
+      android:layout_below="@id/title_list_view_ext_board"      
+      android:id="@android:id/list">  
+    </ListView>  
+    
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+ 
+    <include layout="@layout/dialer_bottom_tabs"/>
+ </LinearLayout>
+		
+   
+	
+	
+ </RelativeLayout>

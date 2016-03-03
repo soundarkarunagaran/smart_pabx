@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_screen_background"
+    android:orientation="vertical"
+   >
+   
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/call_back_title"
+    android:text="Call Back Timer"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="22dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="3dip"
+    android:gravity="center">
+  </TextView>
+  
+    <!-- code starts for status bar -->
+    <TextView
+    android:layout_height="26dip"
+    android:id="@+id/status_settings_availability"
+    android:background="@drawable/status"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_below="@id/call_back_title" > 
+    </TextView>
+    
+	<TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_name_status_call_back"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Name"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_below="@id/call_back_title"  
+    />
+    
+    <TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_extension_status_call_back"  
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Extension"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_marginLeft="217dip"
+    android:layout_below="@id/call_back_title"  
+    />
+    <!-- code ends for status bar -->
+    
+     <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/incoming_call_call_back"
+    android:text="006 4601 256"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="26dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_below="@id/call_back_title"
+    android:layout_marginTop="40dip"
+    android:gravity="center">
+   </TextView>
+    
+    <Button
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:id="@+id/time_one_call_back"
+        android:paddingTop="12sp"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/five_t"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dip"
+        android:layout_below="@id/incoming_call_call_back"
+        > 
+    </Button>
+    
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@drawable/dashboard_screen_button_1"
+        android:id="@+id/time_two_call_back"
+        android:paddingTop="12sp"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/ten"
+        android:textStyle="bold"
+        android:layout_below="@id/incoming_call_call_back"
+        android:layout_toRightOf="@id/time_one_call_back"
+        > 
+    </Button>
+    
+    <Button
+        android:layout_width="85dip"
+        android:layout_height="85dip"
+        android:id="@+id/time_three_call_back"
+        android:paddingTop="12sp"
+      
+        android:layout_marginTop="2dip"
+        android:text="@string/fifteen"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dip"
+        android:layout_below="@id/time_one_call_back"
+        > 
+    </Button>
+    
+    <Button
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:background="@drawable/dashboard_screen_button_1"
+        android:id="@+id/time_four_call_back"
+        android:paddingTop="12sp"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/twenty"
+        android:textStyle="bold"
+        android:layout_below="@id/time_two_call_back"
+        android:layout_toRightOf="@id/time_three_call_back"
+        > 
+    </Button>
+    
+     <Button
+        android:layout_width="180dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dashboard_screen_button_1"
+	    android:id="@+id/cancel_callback_call_back"
+        android:paddingTop="12sp"
+        android:drawablePadding="-5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="70dip"
+        android:layout_below="@id/time_three_call_back"
+      
+        android:text="Cancel Call Back"> 
+    </Button>   
+    
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+ 
+    <include layout="@layout/dialer_bottom_tabs"/>
+    </LinearLayout>
+    <!-- 	<ImageButton
+            android:id="@+id/dialer"
+            android:layout_width="70dp"
+            android:layout_height="70dip"
+            android:background="@drawable/dashboard_screen_button_1"
+            android:src="@drawable/icon_dialer"
+            android:layout_below="@id/home_ccreen_logo"
+            android:layout_marginTop="90dip"
+            android:layout_marginLeft="30dip"
+            android:contentDescription="Dialer"
+            android:text="Dialer" />  -->
+    	
+    	
+
+</RelativeLayout>

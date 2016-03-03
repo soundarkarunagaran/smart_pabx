@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/home_screen_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   
+    >
+ 
+   <TextView
+    android:layout_height="43dip"
+    android:id="@+id/topbar_dialer_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:gravity="center">
+  </TextView>
+  
+   <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/Dialer_title_dialer_main_layout"
+    android:text="Dialer"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="20dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="3dip"
+    android:gravity="center">
+  </TextView>
+  
+   <ImageView
+    android:id="@+id/home_icon_dialer_main_layout"
+    android:layout_width="20dip"
+    android:layout_height="46dip"
+    android:src="@drawable/icon_home"
+    android:contentDescription="Home logo on dialer main layout"
+    android:layout_marginLeft="20dip"
+    android:layout_marginTop="-3dip"
+    />
+   
+   <TextView
+    android:layout_height="26dip"
+    android:id="@+id/status_dialer_main_layout"
+    android:background="@drawable/status"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_below="@id/home_icon_dialer_main_layout" > 
+    </TextView>
+    
+	<TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_name_status_dialer_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Name"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_below="@id/home_icon_dialer_main_layout"  
+    />
+    
+    <TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_extension_status_dialer_main_layout"  
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Extension"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_marginLeft="217dip"
+    android:layout_below="@id/home_icon_dialer_main_layout"  
+    />
+    
+	<EditText 
+    android:id="@+id/number_field_dialer_manin_layout"  
+    android:layout_width="fill_parent" 
+    android:layout_height="50dip"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="55dip"
+    
+    android:layout_below="@id/your_extension_status_dialer_main_layout"
+    android:layout_marginTop="15dip" 
+    android:paddingRight="33dip"  
+    />
+	
+	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text=""
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@drawable/blue"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="265dip"
+        android:id="@+id/contacts_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/your_extension_status_dialer_main_layout"
+        > 
+    </Button>
+	
+	
+    
+	<!-- making of dialpad starts -->
+	<LinearLayout
+    	android:id="@+id/dial_pad_row_one_dialer_main_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dip"
+   		android:orientation="horizontal"
+   		android:gravity="center_horizontal"
+    	android:layout_below="@id/number_field_dialer_manin_layout"
+    >
+ 	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="1"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@drawable/blue"
+        android:layout_marginTop="15dip"
+        android:id="@+id/one_dialer_pad_dialer_main_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+   <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/two"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@drawable/blue"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/two_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/three"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@drawable/blue"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/three_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   </LinearLayout>
+   
+		<LinearLayout
+    	android:id="@+id/dial_pad_row_two_dialer_main_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dip"
+   		android:orientation="horizontal"
+   		android:gravity="center_horizontal"
+   		android:layout_marginTop="-7dip"
+    	android:layout_below="@id/dial_pad_row_one_dialer_main_layout"
+    >
+ 	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/four"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:id="@+id/four_dialer_pad_dialer_main_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+   <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/five"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/five_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/six"
+        android:textColor="@drawable/blue"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/six_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   </LinearLayout>
+   
+   <LinearLayout
+    	android:id="@+id/dial_pad_row_three_dialer_main_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dip"
+   		android:orientation="horizontal"
+   		android:gravity="center_horizontal"
+   		android:layout_marginTop="-7dip"
+    	android:layout_below="@id/dial_pad_row_two_dialer_main_layout"
+    >
+ 	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+         android:text="@string/seven"
+        android:layout_weight="1"
+         android:textColor="@drawable/blue"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:id="@+id/seven_dialer_pad_dialer_main_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+   <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+         android:text="@string/eight"
+        android:layout_weight="1"
+         android:textColor="@drawable/blue"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/eight_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/nine"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/nine_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   </LinearLayout>
+   
+   <LinearLayout
+    	android:id="@+id/dial_pad_row_four_dialer_main_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dip"
+   		android:orientation="horizontal"
+   		android:gravity="center_horizontal"
+   		android:layout_marginTop="-7dip"
+    	android:layout_below="@id/dial_pad_row_three_dialer_main_layout"
+    >
+ 	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/star"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:id="@+id/star_dialer_pad_dialer_main_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+   <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/zero"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/zero_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="@string/hash"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/hash_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   </LinearLayout>
+		
+      <LinearLayout
+    	android:id="@+id/dial_pad_row_five_dialer_main_layout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="54dip"
+   		android:orientation="horizontal"
+   		android:gravity="center_horizontal"
+   		android:layout_marginTop="-7dip"
+    	android:layout_below="@id/dial_pad_row_four_dialer_main_layout"
+    >
+ 	<Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="Add"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:id="@+id/add_dialer_pad_dialer_main_layout"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+   <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="Call"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:id="@+id/call_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+    </Button>
+ 
+    <Button
+        android:layout_width="40dip"
+        android:layout_height="50dip"
+        android:background="@drawable/dialer_button_1"
+        android:text="Delete"
+        android:layout_weight="1"
+        android:textColor="@drawable/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/delete_dialer_pad_dialer_main_layout"
+        android:layout_below="@id/number_field_dialer_manin_layout"
+        > 
+     </Button>
+    
+   </LinearLayout>
+   
+<!--  making of dialpad ends   --> 
+      
+ <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+    <include layout="@layout/dialer_bottom_tabs"/>
+ </LinearLayout> 
+ </RelativeLayout>

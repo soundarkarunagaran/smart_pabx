@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:orientation="vertical"
+android:layout_width="300dip"
+android:layout_height="200dip"
+android:padding="10dp"
+>
+<!-- <TextView
+android:id="@+id/title_error_message"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="50dp"
+android:textStyle="bold"
+android:layout_marginLeft="60dip"
+android:textSize="24dip"
+android:text="Login Failer !" 
+/>   -->
+
+<TextView
+android:id="@+id/error_text_error_message"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:textStyle="bold"
+android:textSize="18dip"
+android:layout_marginLeft="50dip"
+android:text="Invalid old password"
+/>
+
+<Button
+android:id="@+id/retry_error_message"
+android:layout_width="130dip"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:layout_marginLeft="10dip"
+android:layout_below="@id/error_text_error_message"
+android:text="Retry"
+/>
+<Button
+android:id="@+id/cancel_error_message"
+android:layout_width="130dip"
+android:layout_height="wrap_content"
+android:layout_marginLeft="160dip"
+android:layout_marginTop="30dip"
+android:layout_below="@id/error_text_error_message"
+android:text="Cancel"
+/>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+        android:background="@drawable/home_screen_background"
+    android:layout_height="fill_parent"
+    
+    > 
+    
+    <TextView
+    android:layout_height="wrap_content"
+    android:id="@+id/settings_title"
+    android:text="Settings"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="20dip"
+    android:layout_weight="1"
+   
+    android:textColor="@drawable/white"
+    android:padding="5dp"
+    android:layout_marginTop="10dip"
+    android:gravity="center">
+  </TextView>
+  
+     <ImageView
+    android:id="@+id/home_icon_dialer_main_layout"
+    android:layout_width="20dip"
+    android:layout_height="46dip"
+    android:src="@drawable/icon_home"
+    android:contentDescription="Home logo on dialer main layout"
+    android:layout_marginLeft="20dip"
+    android:layout_marginTop="4dip"
+    />
+  
+        <!-- code starts for status bar -->
+    <TextView
+    android:layout_height="26dip"
+    android:id="@+id/status_settings"
+    android:background="@drawable/status"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_below="@id/settings_title" > 
+    </TextView>
+    
+	<TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_name_status_settings"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Name"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_below="@id/settings_title"  
+    />
+    
+    <TextView
+    android:layout_height="24dip"
+    android:id="@+id/your_extension_status_settings"  
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:padding="5dp"
+    android:text="Your Extension"
+    android:textSize="12dip"
+    android:textStyle="bold"
+    android:layout_marginLeft="217dip"
+    android:layout_below="@id/settings_title"  
+    />
+    <!-- code ends for status bar -->
+  
+     <LinearLayout
+        android:id="@+id/settingss_top_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/status_settings"
+        >
+ 
+    <include layout="@layout/settings_top_tabs"/>
+     </LinearLayout>
+     
+   <Spinner
+    android:id="@+id/spinner_busyExtension"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:prompt="@string/be"
+    android:layout_below="@id/settingss_top_tabs"    />
+
+	<Spinner
+    android:id="@+id/spinner_notAnswered"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:prompt="@string/nan"
+    android:layout_below="@id/spinner_busyExtension"    />
+
+	<Spinner
+    android:id="@+id/spinner_notAvailable"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:prompt="@string/na"
+    android:layout_below="@id/spinner_notAnswered" 
+    />
+	
+	<Button
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_marginTop="130dip"
+        android:layout_marginLeft="240dip"
+        android:layout_marginRight="03dip"
+        android:background="@drawable/dashboard_screen_button_green"
+        android:id="@+id/submit_call_routingg"
+        android:layout_below="@id/spinner_notAvailable"
+        > 
+     </Button>
+   
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="175dip"
+        android:layout_below="@id/spinner_notAvailable"
+        >
+        
+    <include layout="@layout/dialer_bottom_tabs"/>
+ </LinearLayout>
+		
+   
+	
+	
+ </RelativeLayout>

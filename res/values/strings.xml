@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Home!</string>
+    <string name="app_name">Smart_PABX</string>
+    <string name="two">2\nABC</string>
+    <string name="three">3\nDEF</string>
+    <string name="four">4\nGHI</string>
+    <string name="five">5\nJKL</string>
+    <string name="six">6\nMNO</string>
+    <string name="seven">7\nPQRS</string>
+    <string name="eight">8\nTUV</string>
+    <string name="nine">9\nWXYZ</string>
+    <string name="five_t">5\nMinutes</string>
+    <string name="ten">10\nMinutes</string>
+    <string name="fifteen">15\nMinutes</string>
+    <string name="twenty">20\nMinutes</string>
+    <string name="zero">0\n+</string>
+    <string name="star">*\n</string>
+    <string name="hash">#\n</string>
+    <string name="be">When my Extension is busy</string>
+    <string name="nan">When call is not answered</string>
+    <string name="na">When I am not available</string>
+</resources>

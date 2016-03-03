@@ -1,0 +1,60 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/bottom_tab_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="67dip"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    
+    >
+ <Button
+    android:layout_height="67dip"
+    android:id="@+id/Dialer_dialer_bottom_tabs"
+    android:text="Dialer"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:drawableTop="@drawable/icon_dialer1"
+    android:padding="6dip"
+    android:background="@drawable/menubar"
+    android:layout_marginRight="2dp"
+    android:gravity="center|bottom">
+  </Button>
+ 
+   <Button
+    android:layout_height="67dip"
+    android:id="@+id/EXT_Board_dialer_bottom_tabs"
+    android:text="EXT Board"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+  android:drawableTop="@drawable/icon_extboard1"
+ android:background="@drawable/menubar"
+    android:padding="6dip"
+    android:layout_marginRight="2dp"
+    android:gravity="center|bottom">
+  </Button>
+ 
+   <Button
+    android:layout_height="67dip"
+    android:id="@+id/settings_dialer_bottom_tabs"
+    android:text="Settings"
+    android:layout_width="fill_parent"
+    android:textStyle="bold"
+    android:textSize="10dip"
+    android:layout_weight="1"
+    android:textColor="@drawable/white"
+    android:background="@drawable/menubar"
+    android:drawableTop="@drawable/icon_settings1"
+    
+    android:padding="6dip"
+    android:layout_marginRight="2dp"
+    android:gravity="center|bottom">
+  </Button>
+ 
+</LinearLayout>
+</merge>

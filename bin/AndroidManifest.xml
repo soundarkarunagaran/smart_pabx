@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.Smart_PABX"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CALL_PHONE" ></uses-permission>
+  <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashBoard" />
+        <activity android:name=".Dialer" />
+        <activity android:name=".Dialer_main" />
+        <activity android:name=".EXT_Board"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Calling_one" />
+        <activity android:name=".Call_Back" />
+        <activity android:name=".Call_Back_Reminder" />
+        <activity android:name=".Settings_Password" />
+        <activity android:name=".Settings_Availability" />
+        <activity android:name=".Settings_Call_Routingg" />
+        <activity android:name=".GetDial_inAction" 
+                  android:theme="@android:style/Theme.Dialog"/>
+        <receiver android:name="GetDial_inAction_Broadcast_Receiver" >
+            <intent-filter>
+                <action android:name="com.android.Smart_PABX" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
